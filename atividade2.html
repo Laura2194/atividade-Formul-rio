@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade2</title>
+    <link rel="icon" type="image/png" href="depositphotos_62706797-stock-illustration-document-flat-circle-icon-with.jpg">
+</head>
+
+<body>
+
+    <style>
+        body {
+            color: #3f0505;
+            background-color: #6f050591;
+            font-family: Arial, Helvetica,
+                sans-serif;
+            text-align: center;
+        }
+    </style>
+
+    <h1>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h1>
+
+    <form action="" method="">
+
+        <label for="log"> <b>login</b> </label>
+        <input type="text" id="log" style="width: 1000px; height: 20px;" required />
+        <br><br>
+
+        <label for="senha"> <b>Senha</b> </label>
+        <input type="password" id="senha" style="width: 1000px; height: 20px;" required />
+        <br><br>
+
+        <label for="status"><b>Status</b></label>
+        <select name="status" id="status" style="width: 1000px; height: 30px; " required>
+            <option>inativo</option>
+            <option>ativo</option>
+        </select>
+        <br><br>
+
+        <label style="padding-right: 30px;" for="tipo"><b>Tipo</b></label>
+        <input type="radio" name="tipo" id="tecnico" required />
+        <label for="tecnico"><b>Técnico</b></label>
+
+        <input type="radio" name="tipo" id="professor" required />
+        <label for="professor"><b>Professor</b></label>
+
+        <input type="radio" name="tipo" id="aluno" required />
+        <label for="aluno"><b>Aluno</b></label>
+        <br><br>
+
+
+
+        <label for="datacri"> <b>Data Criação</b> </label>
+        <input type="date" id="datacri" style="width: 1000px; height: 20px;" required />
+        <br><br>
+
+        <label style="padding-right: 30px;" for="perfil"><b>Perfil</b></label>
+        <input type="radio" name="perfil" id="convidado" required />
+        <label for="convidado"><b>Convidado</b></label>
+
+        <input type="radio" name="perfil" id="administrador" required />
+        <label for="administrador"><b>Administrador</b></label>
+        <br><br>
+
+        <fieldset
+            style="display: flex; align-items: center; gap: 10px; justify-content: center; border: none; padding: 0;">
+            <label for="obs"> <b>Observações </b></label>
+            <textarea rows="8" cols="50" style="overflow: scroll; overflow-x: hidden; width: 1000px; height: 100px;"
+                id="com" required></textarea>
+        </fieldset>
+        <br><br>
+
+
+
+
+        <input type="checkbox" name="perfil" id="compras" required />
+        <label for="compras"><b>Compras</b></label>
+
+        <input type="checkbox" id="bib" />
+        <label for="bib"><b>Biblioteca</b></label>
+
+        <input type="checkbox" id="acad" />
+        <label for="acad"><b>Academia</b></label>
+        <br>
+        <label style="padding-right: 400px;" for="mod"><b>Módulos</b></label>
+
+        <br>
+        <input type="checkbox" id="doc" style="margin-left: 25px;" />
+        <label for="doc"><b>Documentação</b></label>
+
+        <input type="checkbox" id="rh" />
+        <label for="rh"><b>Recursos Humanos</b></label>
+        <br><br>
+
+        <input type="reset" value="Excluir">
+        <input type="submit" value="Cadastrar">
+
+
+    </form>
+
+</body>
+
+</html>
